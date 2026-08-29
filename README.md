@@ -1,6 +1,6 @@
 # Hasfiyat — Kuyumcu Yazılımı, Fiyat Ekranı ve Fiyat Panosu
 
-[Hasfiyat](https://hasfiyat.com), kuyumcular için anlık altın & döviz fiyat panosu, mağaza içi dijital fiyat ekranı, formüllü/yüzdelikli fiyatlandırma, gram bazlı stok & kasa, e-Fatura/e-Arşiv ve kuyumcuya özel müşteri sayfasını tek panelde toplayan; web + Windows + iOS/Android çalışan dijital yönetim sistemidir. Kendi gerçek zamanlı altın & döviz API altyapısından (altinapi.hasfiyat.com, 11 kaynak) beslenir.
+[Hasfiyat](https://hasfiyat.com), kuyumcular için anlık altın & döviz fiyat panosu, mağaza içi dijital fiyat ekranı, formüllü/yüzdelikli fiyatlandırma, gram bazlı stok & kasa, e-Fatura/e-Arşiv ve kuyumcuya özel müşteri sayfasını tek panelde toplayan; web + Windows + iOS/Android çalışan dijital yönetim sistemidir. Kendi canlı altın & döviz API altyapısından (altinapi.hasfiyat.com) beslenir.
 
 ## Özellikler
 
