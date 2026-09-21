@@ -10,6 +10,15 @@ Kuyumcu fiyat ekranı (TV/monitör, saniyede otomatik güncelleme); kuyumcu fiya
 
 Kuyumcu Yazılımı: https://hasfiyat.com/kuyumcu-yazilimi — Kuyumcu Programı: https://hasfiyat.com/kuyumcu-programi — Kuyumcu Fiyat Ekranı: https://hasfiyat.com/kuyumcu-fiyat-ekrani — Kuyumcu Fiyat Panosu: https://hasfiyat.com/kuyumcu-fiyat-panosu — Altın & Döviz API: https://altinapi.hasfiyat.com
 
+## Sürüm Notları
+
+Hasfiyat sürekli geliştirilen bir bulut (SaaS) üründür; güncellemeler otomatik yayına alınır, kurulum veya sürüm yükseltme gerekmez. Yayınlanan tüm değişiklikler herkese açık tutulur:
+
+- [CHANGELOG.md](CHANGELOG.md) — tüm sürümler
+- [releases.atom](https://github.com/ykpkilic/hasfiyat/releases.atom) — makine okunur sürüm akışı
+
+Son sürüm: **v2026.09.21**
+
 ## English
 
 Hasfiyat is a digital management platform for jewelers (kuyumcu) in Türkiye: live gold & FX price board, in-store digital price screen, gram-based inventory & cash, e-invoicing, and a customer page — on web, Windows and mobile.

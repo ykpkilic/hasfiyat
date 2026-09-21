@@ -1,0 +1,37 @@
+# Etiket gonderildiginde otomatik GitHub Release olusturur.
+# Kimlik: calisma aninda uretilen yerlesik GITHUB_TOKEN. Depoya
+# elle bir sir/anahtar EKLENMEZ. Kapsami yalnizca bu depodur.
+name: Surum yayinla
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Release olustur
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          ETIKET="${GITHUB_REF_NAME}"
+          # CHANGELOG'dan yalnizca bu surumun bolumunu al
+          awk -v t="## ${ETIKET}" '
+            $0 == t {yaz=1; next}
+            yaz && /^## / {exit}
+            yaz {print}
+          ' CHANGELOG.md > govde.md
+          if [ ! -s govde.md ]; then
+            echo "Surum notlari: https://github.com/${GITHUB_REPOSITORY}/blob/main/CHANGELOG.md" > govde.md
+          fi
+          gh release create "$ETIKET" \
+            --title "Hasfiyat $ETIKET" \
+            --notes-file govde.md
