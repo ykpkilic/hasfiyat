@@ -17,7 +17,7 @@ Hasfiyat sürekli geliştirilen bir bulut (SaaS) üründür; güncellemeler otom
 - [CHANGELOG.md](CHANGELOG.md) — tüm sürümler
 - [releases.atom](https://github.com/ykpkilic/hasfiyat/releases.atom) — makine okunur sürüm akışı
 
-Son sürüm: **v2026.09.21**
+Son sürüm: **v2026.09.29**
 
 ## English
 
